@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            padding: 35px 10%;
+        }
+
+        main.row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+        }
+
+        .col header.title {
+            font-family: Helvetica;
+            color: #11a372;
+        }
+
+        .col .contents {
+            padding: 0px 30px;
+            border-left: 2px solid red;
+
+        }
+
+        .col .contents .box {
+            position: relative;
+            padding: 20px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: all 0.4s;
+            margin-bottom: 20px;
+
+        }
+
+        .col .contents .box::before {
+            content: " ";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            right: calc(100% + 22px);
+            top: 0;
+            background-color: #11a372;
+            border: 2px solid white;
+        }
+
+        .box h4 {
+            position: relative;
+            color: #11a372;
+        }
+
+        .box h3 {
+            font-size: 19px;
+            padding: 10px 0px 6px;
+            font-family: Helvetica;
+            color: #444;
+        }
+
+        .box p {
+            line-height: 1.2;
+            color: #666;
+            font-size: 17px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html"><img src="./image/home-pic.png" alt=""></a>
+    <div class="container">
+
+        <main class="row">
+            <!-- Education section -->
+            <section class="col">
+
+                <header class="title">
+                    <h2>Education</h2>
+                </header>
+                <div class="contents">
+                    <div class="box">
+
+                        <h4>2017 - 2019 </h4>
+                        <h3>Oxford Public high School Hajilawing Khar Bajaur</h3>
+                        <p style=" font-weight: bolder; text-decoration: underline;">Matric</p>
+                        <p>Total Marks: 1100</p>
+                        <p>Obtain Marks: 896</p>
+                        <p>Total Marks: A+</p>
+
+                    </div>
+
+                    <div class="box">
+
+                        <h4>2019 - 2021 </h4>
+                        <h3>Government Post Graduate College Khar Bajaur</h3>
+                        <p style=" font-weight: bolder; text-decoration: underline;">FSC</p>
+                        <p>Total Marks: 1100</p>
+                        <p>Obtain Marks: 958</p>
+                        <p>Total Marks: A+</p>
+                    </div>
+
+                    <div class="box">
+
+                        <h4>2021 - 2025 </h4>
+                        <h3>Islamia College University Peshawar</h2>
+                            <p style=" font-weight: bolder; text-decoration: underline;">Bachlor of Science</p>
+                            <p>CGPA: 4</p>
+                            <p>Obtain CGPA: 3.0</p>
+                            <p>Total Marks: A</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end -->
+
+
+            <!-- Experience section  -->
+            <section class="col">
+
+                <header class="title">
+                    <h2>Experience</h2>
+                </header>
+                <div class="contents">
+                    <div class="box">
+
+                        <h4>2023 - 2024 </h4>
+                        <h3>Front-End-Web Developer</h3>
+                        <p>I have 6<sup>th</sup>months experience in Front-End-Web Developement, I have full Command in
+                            html, css, and javascript. I have compeleted some templete website like University of
+                            Islamia College University Peshawar, University of sidah, Mehran University of Engineering
+                            and Technology jamshoro </p>
+                    </div>
+
+                    <div class="box">
+                        <h3>UI/UX Designer</h3>
+                        <h4>2020 - 2021 </h4>
+                        <p>I have some Experience in Graphic designing. Photoshap and Adobe Illistrator i designing in
+                            this software </p>
+                    </div>
+
+                    <div class="box">
+
+                        <h4>2021 - 2022 </h4>
+                        <h3>Mobile App Developer</h3>
+                        <p>I have Attend the Mobile APP session in University. this session contains one week i have
+                            learn Mobile app and github. </p>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>

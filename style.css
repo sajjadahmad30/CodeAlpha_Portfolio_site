@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    min-width: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 3.5rem;
+
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline white;
+}
+
+.left-div,
+.right-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-div {
+    background-color: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-div {
+    background: linear-gradient(-45deg, #3877ff, #262525 90%);
+    width: 30%;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.content .intro span {
+
+    color: #5db9ee;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content .details {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+
+}
+
+.btn button {
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+button:nth-child(1) {
+    background-color: #5db9ee;
+    color: #262525;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #5db9ee;
+}
+
+button:nth-child(2) {
+    background-color: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+
+button:nth-child(2):hover {
+    background-color: #5db9ee;
+    color: #262525;
+
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+
+.circle:nth-child(2) {
+    background-image: url(./image/sajjad.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1.1rem solid white;
+    width: 30rem;
+    box-shadow:
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877ff,
+        inset 0 0 2rem #3877ff,
+        0 0 4rem #3877ff,
+        inset 0 0 4rem #3877ff;
+}
